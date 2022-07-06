@@ -4,7 +4,7 @@
     display: flex;
     width: 100%;
     padding: 20px;
-    gap: 30px;
+    gap: 30%;
 }
 
 nav{
@@ -20,7 +20,7 @@ nav{
 }
 
 .logo img{
-    height: 100px;
+    height: 80px;
     margin: 5px auto;
 }
 
@@ -48,16 +48,17 @@ select{
 .salaryRange_p{
     font-size: 17px;
     margin-top: -20px;
-    margin-left: 220px;
+  
 }
 
-button{
+.btn, button{
     padding: 10px 20px;
+    margin: 10px 0;
     cursor: pointer;
     background-color: transparent;
     font-size: 20px;
 }
-button:hover{
+.btn, button:hover{
     padding: 10px 20px;
     background-color: black;
     cursor: pointer;
@@ -70,5 +71,52 @@ button:hover{
     margin-left: 28%;
     padding: 20px;
     border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 
+}
+
+.logo_div{
+    display: flex;
+    gap: 200px;
+    /* justify-content: space-around; */
+}
+
+.logo_div h3{
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+
+.data_mainDiv{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+
+.data_mainDiv p{
+    font-size: 15px;
+
+    margin: 5px auto;
+}
+.company_logo{
+    height: 50px;
+}
+
+.inp{
+    height: 30px;
+    width: 60%;
+    margin: 5px auto;
+    font-size: 20px;
+}
+
+.radio{
+    margin-right: 20px;
+}
+
+label{
+    margin: 0 0;
 }
