@@ -23,6 +23,10 @@ export const JobListing = () => {
     const experience = new URLSearchParams(search).get('experience') || "all";
 
 
+    const handleClearFilter = () => {
+        navigate("/");
+    }
+
     const getData = () => {
         axios.get(`https://job-listing-app.herokuapp.com/jobs?page=${page}&pagesize=${pagesize}&role=${role}&ctc=${ctc}&location=${location}&experience=${experience}&sort=${sort}`)
         .then((res) => {
@@ -125,7 +129,7 @@ export const JobListing = () => {
                 <input type="range" className="salaryRange_inp" min="1" max="20" name="salary" onChange={(e) => handleCtcChange(e)} />
                 <p className="salaryRange_p">{salaryRange} LPA</p>
 
-
+                <button onClick={handleClearFilter} className="btn">Clear Filter</button>
                 
             </nav>
 
